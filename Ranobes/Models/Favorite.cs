@@ -1,4 +1,6 @@
-﻿namespace Ranobes.Models
+﻿using System.Collections.Generic;
+
+namespace Ranobes.Models
 {
     public class Favorite
     {
@@ -6,12 +8,12 @@
 
         public string Description { get; set; }
 
-        public string Status { get; set; }
-
-        public string Language { get; set; }
+        public List<string> Status { get; set; }
 
         public string Url { get; set; }
 
         public string ChaptersUrl { get; set; }
+
+        public List<Chapter> Chapters { get; set; }
     }
 }
